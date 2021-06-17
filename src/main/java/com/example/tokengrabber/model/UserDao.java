@@ -7,6 +7,10 @@ import javax.persistence.*;
 @Entity
 @Table(name = "registration_table")
 public class UserDao {
+    public long getId() {
+        return id;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

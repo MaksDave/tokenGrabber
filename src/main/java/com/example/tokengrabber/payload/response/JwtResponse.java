@@ -1,4 +1,4 @@
-package com.example.tokengrabber.util;
+package com.example.tokengrabber.payload.response;
 
 import java.io.Serializable;
 

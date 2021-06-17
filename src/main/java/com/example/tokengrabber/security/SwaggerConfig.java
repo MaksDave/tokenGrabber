@@ -1,4 +1,4 @@
-package com.example.tokengrabber.util;
+package com.example.tokengrabber.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
