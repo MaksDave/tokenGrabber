@@ -1,39 +1,27 @@
 package com.example.tokengrabber.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
+import lombok.Getter;
+import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "registration_table")
 public class UserDao {
-    public long getId() {
-        return id;
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter
+    @Setter
     private long id;
     @Column
+    @Getter
+    @Setter
     private String username;
     @Column
     @JsonIgnore
+    @Getter
+    @Setter
     private String password;
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
 }

@@ -2,7 +2,6 @@ package com.example.tokengrabber.validations;
 
 import com.example.tokengrabber.annotations.ValidEmail;
 
-import javax.validation.Constraint;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.regex.Matcher;
